@@ -1,7 +1,10 @@
-function validateForm() {
-    var x = document.forms["register"]["name"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
+$(init);
+
+function init()
+{
+    $("#resizeMe").resizable();
+
+    $(".mainImage").addClass("ui-widget")
+            .addClass("ui-widget-content")
+            .addClass("ui-corner-all");
 }
