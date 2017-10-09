@@ -53,3 +53,8 @@ li a:hover {
 .cart{
   width: 20%;
 }
+
+.calendar {
+  display: inline-block;
+  float:right;
+}
