@@ -41,6 +41,15 @@ li a:hover {
 .mainImage{
     width: 100%;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
+.dragMe{
+    width: 10%;
+    display: inline-block;
 
+}
+
+.cart{
+  width: 20%;
+}
