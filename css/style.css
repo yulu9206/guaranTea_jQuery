@@ -50,8 +50,9 @@ li a:hover {
 
 }
 
-.cart{
-  width: 20%;
+#target{
+    width: 20%;
+    display: inline-block;
 }
 
 .calendar {
