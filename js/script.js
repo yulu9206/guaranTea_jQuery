@@ -12,15 +12,30 @@ function init() {
 
   $("#target").bind("drop", highlightTarget);
   $("#target").bind("dropout", resetTarget);
+  $("#datePicker").datepicker();
+  $("#dialog").dialog();
+  $("#dialog").dialog("close");
+}
 
-  function highlightTarget(event, ui) {
+function highlightTarget(event, ui)
+{
     $("#target").addClass("ui-state-highlight")
-      .html("Dropped ")
-      .append(ui.draggable.text());
-  }
+                .html("Dropped ")
+                .append(ui.draggable.text());
+}
 
-  function resetTarget(event, ui) {
+function resetTarget(event, ui)
+{
     $("#target").removeClass("ui-state-highlight")
-      .html("Drop on me");
-  }
+                .html("Drop on me");
+}
+
+function openDialog()
+{
+    $("#dialog").dialog("open");
+}
+
+function closeDialog()
+{
+    $("#dialog").dialog("close");
 }
