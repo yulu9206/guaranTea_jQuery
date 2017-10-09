@@ -12,7 +12,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var cons = require('consolidate');
 
-mongoose.connect('mongodb://localhost/loginapp');
+// mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
